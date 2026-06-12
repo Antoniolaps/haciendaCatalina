@@ -1488,6 +1488,10 @@ input[type="tel"] {
 
 }
 
+.list-group .list-group-item {
+    padding: 2rem 0;
+}
+
 .map-overlay {
     position: absolute;
     top: 50%;
@@ -1503,6 +1507,8 @@ input[type="tel"] {
     font-size: 1.5rem;
     margin-bottom: 12px;
 }
+
+
 
 .map-overlay p {
     color: var(--gray);
