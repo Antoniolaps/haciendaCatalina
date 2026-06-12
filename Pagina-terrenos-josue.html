@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACIENDA CATALINA COCLÉ — Lotes en Panamá</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <img src="s/HACIENDA CATALINA.png" alt="Cargando..." class="preloader-image" title="Cargando..."
+            aria-label="Animación de carga" role="img">
+    </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <img src="/HACIENDA CATALINA.png" alt="Logo de Terrenos Panamá" title="Logo de Terrenos Panamá"
+                aria-label="Logo de Terrenos Panamá" role="img" class="nav-logo">
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#amenidades">Amenidades</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto" class="nav-cta">Agendar Visita</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio" onclick="closeMobile()">Inicio</a>
+        <a href="#galeria" onclick="closeMobile()">Galería</a>
+        <a href="#amenidades" onclick="closeMobile()">Amenidades</a>
+        <a href="#ubicacion" onclick="closeMobile()">Ubicación</a>
+        <a href="#contacto" onclick="closeMobile()">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <video class="hero-video" autoplay muted loop>
+            <source src="" type="video/mp4" alt="Video de fondo mostrando paisajes verdes y terrenos en Panamá"
+                title="Video de fondo mostrando paisajes verdes y terrenos en Panamá"
+                aria-label="Video de fondo mostrando paisajes verdes y terrenos en Panamá" role="img">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+
+            <div class="content-wrapper">
+                <h1 class="hero-title">HACIENDA CATALINA COCLE<small>CONECTA CON LA NATURALEZA.</small></h1>
+                <p>Un lugar donde los árboles son tus vecinos, el canto de las aves reemplaza el ruido de la ciudad y
+                    cada amanecer te recuerda lo que realmente importa.</p>
+                <strong>Ubicación: El Salado, San Juan de Dios, Coclé. Solo 13 lotes exclusivos. Reserva desde
+                    B/.1,000.</strong>
+
+            </div>
+
+            <div class="content-wrapper">
+                <h2 class="hero-t">Agenda tu Visita</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="nameHelpId"
+                        placeholder="Tu nombre completo" />
+
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="lastnameHelpId"
+                        placeholder="Tu apellido completo" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" name="" id="" aria-describedby="phoneHelpId"
+                        placeholder="Tu número de teléfono" />
+
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                        placeholder="abc@mail.com" />
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-secondary">Agendar Reunión</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="nosotros">
+        <div class="container nosotros" style="padding: 4rem 0;">
+            <h3 class="section-title-nosotros">Nuestra Filosofía
+            </h3>
+            <p style="margin: 4rem 0; font-size: 1rem;">
+                En HACIENDA CATALINA, creemos que la compra de un terreno no es solo una
+                transacción, sino el inicio de
+                un
+                sueño. Nuestro compromiso más que un terreno, un refugio para tu familia. El proyecto busca preservar la
+                naturaleza, los árboles, la fauna local y la tranquilidad de la zona no solo ofrecerte los mejores
+                lotes en las zonas de mayor verde de Panama. Desde el primer
+                contacto hasta la inscripción del título a tu nombre, te acompañamos en cada paso del proceso.
+                <small> asegurándonos de que tu inversión sea tan sólida como el terreno que estás adquiriendo.</small>
+            </p>
+
+        </div>
+    </section>
+    <section id="ubicacion">
+        <div class="start">
+            <h3 class="start-title">Ubicación Estratégica</h3>
+            <div class="start-item-center">
+                <div class="starts">
+                    <div class="start-item">
+                        <i class="fas fa-tree"></i>
+                        <p>Ubicado en El Salado, San Juan de Dios,<br> Coclé</p>
+                    </div>
+                </div>
+
+                <div class="start-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>A 15 minutos de la Carretera Interamericana,<br> entrada por la estación Terpel</p>
+                </div>
+                <div class="start-item
+                ">
+                    <i class="fas fa-building"></i>
+                    <p>A 25 minutos de Penonomé y <br>a 30 minutos de El Valle de Antón.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Lot -->
+    <section class=" section featured" id="lotes">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-image-wrapper reveal">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900" alt="Lote Destacado">
+                    <div class="featured-image-overlay">
+                        <span><i class="fas fa-check-circle"></i> Disponible</span>
+                        <span><i class="fas fa-house"></i> Lote</span>
+                    </div>
+                </div>
+                <div class="featured-content reveal">
+                    <div class="section-tag">Lotes Disponible</div>
+                    <h2 class="section-title">Residencia Pacific Bay — Lote Esquina Premium</h2>
+                    <p class="featured-description">
+                        Ubicado en la zona de mayor desarrollo de Panamá Oeste, este lote de esquina
+                        ofrece una
+                        oportunidad única de inversión. Con acceso directo a la carretera principal,
+                        servicios completos
+                        y vista panorámica al océano Pacífico. Ideal para construir la casa de sus
+                        sueños o como
+                        inversión a mediano plazo.
+                    </p>
+                    <div class="featured-specs">
+                        <div class="featured-spec">
+                            <i class="fas fa-ruler-combined"></i>
+                            <div class="featured-spec-info">
+                                <span class="spec-val">1,800 m²</span>
+                                <span class="spec-label">Superficie Total</span>
+                            </div>
+                        </div>
+                        <div class="featured-spec">
+                            <i class="fas fa-road"></i>
+                            <div class="featured-spec-info">
+                                <span class="spec-val">45m × 40m</span>
+                                <span class="spec-label">Dimensiones</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-spec">
+                            <i class="fas fa-file-contract"></i>
+                            <div class="featured-spec-info">
+                                <span class="spec-val">Escritura</span>
+                                <span class="spec-label">Documentación</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-price">
+                        $145,000 <small>USD</small>
+                    </div>
+                    <div class="hero-buttons" style="justify-content: flex-start;">
+                        <button class="btn-primary" onclick="openModal('Lote Pacific Bay Premium')">Agendar Reunión
+                            Privada</button>
+                        <a href="https://wa.me/50767188806?text=Hola%2C%20me%20interesa%20el%20Lote%20Pacific%20Bay%20Premium"
+                            target="_blank" class="btn-secondary">
+                            <i class="fab fa-whatsapp"></i>&nbsp; WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="amenidades">
+
+        <div class="section-amen-content">
+            <h3>Amenidades</h3>
+            <div class="card-group">
+                <div class="card">
+                    <i class="fas fa-tree"></i>
+                    <h4>Gazebo Social</h4>
+                    <p>Gazebo social para reuniones familiares y comunitarias.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-basketball-ball"></i>
+                    <h4>Cancha Multiuso</h4>
+                    <p>Cancha multiuso para actividades recreativas y deportivas.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-child"></i>
+                    <h4>Parque Infantil</h4>
+                    <p>Parque infantil para el disfrute de los niños.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Áreas Verdes</h4>
+                    <p>Amplias áreas verdes y espacios de convivencia.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <!-- <section class="section gallery" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Galería</div>
+                <h2 class="section-title">Nuestros Terrenos</h2>
+                <p class="section-subtitle">Conoce los entornos donde se ubican nuestros terrenos exclusivos</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900" alt="Galería 1">
+                    <div class="gallery-item-overlay">
+                        <span>Vista aérea — Terrenos en </span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=600" alt="Galería 2">
+                    <div class="gallery-item-overlay">
+                        <span>Zona verde — </span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600" alt="Galería 3">
+                    <div class="gallery-item-overlay">
+                        <span>Desarrollo urbano — </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <img src="backgrojundand.jpg" alt="CTA Background">
+            <div class="cta-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <div class="section-tag">Contacto</div>
+                <h2>Agenda tu Visita <span style="color: var(--gold);">Personalizada</span> Hoy</h2>
+                <p>Reserva una reunión privada. Sin presión, sin compromiso. Te ayudamos a que esta sea tu
+                    inversión del lote correcto.</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="openModal('Consulta General')">
+                        <i class="fas fa-calendar-check"></i>&nbsp; Agendar Reunión
+                    </button>
+                    <a href="https://wa.me/5076718-8806?text=Hola%2C%20me%20interesa%20agendar%20una%20visita%20para%20ver%20los%20lotes%20disponibles"
+                        target="_blank" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <section class="map-section" id="ubicacion">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d1695.3609625934803!2d-80.27034191616184!3d8.508933262557814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d8.5092065!2d-80.2694702!4m3!3m2!1d8.5092612!2d-80.2694722!5e1!3m2!1ses!2spa!4v1781233127788!5m2!1ses!2spa"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="content-map">
+
+            <ul class="list-group">
+                <h5>Accesos</h5>
+                <br>
+                <li class="list-group-item d-flex justify-content-between align-items-center active">
+                    <strong>Acceso 1</strong>
+                    <p>Si viaja desde Ciudad de Panamá</p>
+                    <span class="badge bg-secondary rounded-pill">Ingrese por la Estación Terpel y gire a la izquierda
+                        con dirección a San Juan de Dios.</span>
+                </li>
+                <br>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>Acceso 2</strong>
+                    <p>Si viaja desde Coclé</p>
+                    <span class="badge bg-secondary rounded-pill">Ingrese por la carretera a Coclé y siga las
+                        indicaciones.</span>
+                </li>
+                <br>
+                <li class="list-group-item d-flex justify-content-between align-items-center disabled">
+                    <strong>Acceso 3</strong>
+                    <p>Dirección El Salado</p>
+                    <span class="badge bg-secondary rounded-pill">Continúe por la vía principal durante aproximadamente
+                        15 minutos.
+                    </span>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">HACIENDA CATALINA COCLÉ</a>
+                    <p>Tu aliado de confianza para la compra de terrenos y lotes en las zonas de mayor plusvalía de
+                        Panamá. Inversión segura, asesoría experta.</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#amenidades">Amenidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 HACIENDA CATALINA COCLÉ. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#sitemap">Mapa del Sitio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50767188806?text=Hola%2C%20me%20interesa%20información%20sobre%20los%20lotes%20disponibles%20en%20TerraPanamá"
+        target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">¿Necesitas ayuda?</div>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <h3>Agendar Visita</h3>
+            <p id="modalLotName">Completa tus datos para coordinar una reunión.</p>
+            <form onsubmit="handleModalSubmit(event)">
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono / WhatsApp</label>
+                    <input type="tel" placeholder="+507 000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Fecha Preferida</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Mensaje (Opcional)</label>
+                    <textarea placeholder="¿Alguna pregunta o preferencia?"></textarea>
+                </div>
+                <button type="submit" class="form-submit">
+                    <i class="fas fa-calendar-check"></i>&nbsp; Confirmar Reunión
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ===== PRELOADER =====
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('hidden');
+            }, 1400);
+        });
+
+        // ===== CUSTOM CURSOR =====
+        const cursor = document.getElementById('cursor');
+        const cursorDot = document.getElementById('cursorDot');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX - 10 + 'px';
+            cursor.style.top = e.clientY - 10 + 'px';
+            cursorDot.style.left = e.clientX - 2.5 + 'px';
+            cursorDot.style.top = e.clientY - 2.5 + 'px';
+        });
+
+        document.querySelectorAll('a, button, .lot-card').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                cursor.style.borderColor = 'var(--gold-light)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.borderColor = 'var(--gold)';
+            });
+        });
+
+        // ===== NAVBAR SCROLL =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== MOBILE MENU =====
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        function closeMobile() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        }
+
+        // ===== SCROLL REVEAL =====
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== COUNTER ANIMATION =====
+        const counters = document.querySelectorAll('.stat-number');
+        let countersStarted = false;
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersStarted) {
+                    countersStarted = true;
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const increment = target / (duration / 16);
+                        let current = 0;
+
+                        const updateCounter = () => {
+                            current += increment;
+                            if (current < target) {
+                                counter.textContent = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target + '+';
+                            }
+                        };
+                        updateCounter();
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // ===== MODAL =====
+        function openModal(lotName) {
+            document.getElementById('modalLotName').textContent = `Lote: ${lotName} — Completa tus datos para coordinar una reunión.`;
+            document.getElementById('modalOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('modalOverlay').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('modalOverlay')) {
+                closeModal();
+            }
+        });
+
+        // ===== WHATSAPP =====
+        function openWhatsApp(lotName) {
+            const message = encodeURIComponent(`Hola, me interesa el "${lotName}". ¿Podrían darme más información?`);
+            window.open(`https://wa.me/50767188806?text=${message}`, '_blank');
+        }
+
+        // ===== FORM HANDLERS =====
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Muy pronto me comunicará contigo en las próximas 24 horas.');
+            e.target.reset();
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            alert('¡Reunión agendada exitosamente! Recibirás una confirmación por email y WhatsApp.');
+            closeModal();
+            e.target.reset();
+        }
+
+        // ===== SMOOTH SCROLL FOR NAV LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===== PARALLAX EFFECT ON HERO =====
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroVideo = document.querySelector('.hero-video');
+            if (heroVideo && scrolled < window.innerHeight) {
+                heroVideo.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+    </script>
+</body>
+
+</html>
