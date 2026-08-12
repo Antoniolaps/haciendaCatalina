@@ -1,0 +1,28 @@
+# ==========================================================================
+# HACIENDA CATALINA COCLÉ - APACHE SECURITY & HTTPS ENFORCEMENT CONFIG
+# ==========================================================================
+
+# 1. FORCE HTTPS REDIRECT
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 2. SECURITY HEADERS
+<IfModule mod_headers.c>
+    # Enforce HTTPS HSTS
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+    
+    # XSS & Anti-Sniff Protection
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Content Security Policy (CSP)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://antoniolaps.github.io https://images.unsplash.com; frame-src 'self' https://www.google.com;"
+</IfModule>
+
+# 3. PREVENT DIRECTORY LISTING
+Options -Indexes
